@@ -32,7 +32,7 @@ const componentsCardData = [
     name: "User Info",
     numberOfComponents: "8",
     link: "/user-info",
-    image: "/component-thumbnails/userinfo.svg",
+    image: "/component-thumbnails/userInfo.svg",
   },
   {
     id: 6,
