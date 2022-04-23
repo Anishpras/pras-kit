@@ -10,7 +10,11 @@ const navbars = () => {
         <Header link="/components" name="Navbars" />
       </div>
 
-      <div className="w-full py-8 flex flex-wrap justify-center items-center gap-8"></div>
+      <div className="w-full py-8 flex flex-wrap justify-center items-center gap-8">
+        <div>
+          
+        </div>
+      </div>
     </div>
   );
 };
