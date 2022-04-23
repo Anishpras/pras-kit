@@ -8,7 +8,7 @@ const tabs = () => {
     <div className="h-screen overflow-y-auto">
       <Nav />
       <div className="px-4 flex justify-center items-center my-2">
-        <Header link="/components" name="Navbars" />
+        <Header link="/components" name="Tabs" />
       </div>
 
       <div className="w-full py-8 flex flex-col justify-center items-center gap-8">
