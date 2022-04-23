@@ -2,15 +2,15 @@ const componentsCardData = [
   {
     id: 1,
     name: "Navbars",
-    numberOfComponents: "9",
+    numberOfComponents: "2",
     link: "/navbars",
     image: "/component-thumbnails/navbars.svg",
   },
   {
     id: 2,
-    name: "Headers",
-    numberOfComponents: "11",
-    link: "/headers",
+    name: "Tabs",
+    numberOfComponents: "2",
+    link: "/tabs",
     image: "/component-thumbnails/headers.svg",
   },
   {
