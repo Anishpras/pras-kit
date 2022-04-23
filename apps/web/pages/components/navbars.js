@@ -1,4 +1,5 @@
 import React from "react";
+import ShowcaseArea from "../../components/Components/ShowcaseArea";
 import Header from "../../components/Header";
 import Nav from "../../components/Nav";
 
@@ -11,8 +12,8 @@ const navbars = () => {
       </div>
 
       <div className="w-full py-8 flex flex-wrap justify-center items-center gap-8">
-        <div>
-          
+        <div className="w-full px-4 max-w-7xl">
+          <ShowcaseArea />
         </div>
       </div>
     </div>
