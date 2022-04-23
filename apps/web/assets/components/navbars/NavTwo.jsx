@@ -16,17 +16,19 @@ const navData = [
 const DrawerNav = ({ children, toggleSidebar, setToggleSidebar }) => {
   const ref = useRef();
   useOnClickOutside(ref, () => setToggleSidebar(false));
+  let toggleStateClassName = toggleSidebar
+    ? "translate-x-[40vw] md:translate-x-[55vw] ease-out h-full  bg-[#111827] text-white"
+    : "translate-x-[100vw] ease-in";
   return (
     <>
-      <div
+      {/* <div
         ref={ref}
-        className={`drawerBackground fixed  top-0 px-2 rounded-l-xl  z-30 inset-y-0  w-[30rem]  transition duration-300 transform  ${
-          toggleSidebar
-            ? "translate-x-[40vw] md:translate-x-[55vw] ease-out h-full  bg-[#111827] text-white"
-            : "translate-x-[100vw] ease-in  "
-        }`}>
+        className={
+          "drawerBackground fixed  top-0 px-2 rounded-l-xl  z-30 inset-y-0  w-[30rem]  transition duration-300 transform" +
+          toggleStateClassName
+        }>
         {children}
-      </div>
+      </div> */}
     </>
   );
 };
@@ -60,7 +62,7 @@ export default function NavTwo() {
             <div className="flex justify-between items-center   py-6 sm:justify-between sm:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link href="/" passHref>
-                  <h1 className=" gradientText font-bold leading-none text-4xl hover:cursor-pointer">
+                  <h1 className=" font-bold leading-none text-4xl hover:cursor-pointer">
                     LOGO
                   </h1>
                 </Link>
@@ -69,7 +71,7 @@ export default function NavTwo() {
                 <div
                   onClick={() => setToggleSidebar(!toggleSidebar)}
                   className=" rounded-md p-2 inline-flex items-center justify-center hover:text-gray-500 ">
-                  <button className="inline-flex text-white items-center lg:hidden  focus-visible:ring ring-indigo-300  active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2 sm:-mr-8 md:-mr-32">
+                  <button className="inline-flex text-black items-center lg:hidden  focus-visible:ring ring-indigo-300  active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2 sm:-mr-8 md:-mr-32">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-6 w-6"
@@ -91,7 +93,7 @@ export default function NavTwo() {
                 {navData.map((n) => {
                   return (
                     <Link key={n.name} href={n.href} passHref>
-                      <span className=" text-white text-2xl  cursor-pointer hover:text-[#ff5478]">
+                      <span className=" text-black text-2xl  cursor-pointer hover:text-[#ff5478]">
                         {n.name}
                       </span>
                     </Link>

@@ -32,7 +32,7 @@ const ShowcaseArea = ({ component, jsx, name }) => {
           </button>
         </p>
       </div>
-      <div className="w-full">{component}</div>
+      <div className="w-full bg-gray-200 rounded-b-xl">{component}</div>
     </div>
   );
 };

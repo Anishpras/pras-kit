@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 
 export default function NavOne() {
   return (
@@ -47,9 +47,9 @@ export default function NavOne() {
             </a>
           </li>
         </ul>
-        <div className="items-center flex-shrink-0 hidden lg:flex">
+        <div className="items-center flex-shrink-0 hidden lg:flex gap-2">
           <button className="self-center px-8 py-3 rounded">Sign in</button>
-          <button className="self-center px-8 py-3 font-semibold rounded bg-blue-600 text-white">
+          <button className="self-center px-8 py-3  rounded  text-black">
             Sign up
           </button>
         </div>
