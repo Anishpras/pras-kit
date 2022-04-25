@@ -137,7 +137,10 @@ export default function NavTwo() {
   },
   {
     name: "Without Drawer",
-    component: <NavOne />,
+    large:
+      "https://res.cloudinary.com/dw9jeahgd/image/upload/v1650864419/pras-kit/components/navbars/without-drawer/large.png",
+    small:
+      "https://res.cloudinary.com/dw9jeahgd/image/upload/v1650864492/pras-kit/components/navbars/without-drawer/small.png",
     jsx: `
       import React from "react";
 

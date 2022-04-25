@@ -37,14 +37,14 @@ const ShowcaseArea = ({ large, small, jsx, name }) => {
           <img
             src={large}
             alt={name}
-            className="rounded-2xl object-cover object-center w-full rounded-md bg-gray-500"
+            className="rounded-b-xl object-cover object-center w-full rounded-md bg-gray-500"
           />
         </div>
         <div className="lg:hidden">
           <img
             src={small}
             alt={name}
-            className="rounded-2xl object-cover object-center w-full rounded-md bg-gray-500"
+            className="rounded-b-xl object-cover object-center w-full rounded-md bg-gray-500"
           />
         </div>
       </div>
