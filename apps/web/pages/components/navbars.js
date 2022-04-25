@@ -18,7 +18,8 @@ const navbars = () => {
             <div key={idx} className="w-full px-4 max-w-7xl">
               <ShowcaseArea
                 name={navbarData.name}
-                component={navbarData.component}
+                large={navbarData.large}
+                small={navbarData.small}
                 jsx={navbarData.jsx}
               />
             </div>

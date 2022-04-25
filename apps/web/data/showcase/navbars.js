@@ -4,7 +4,10 @@ import NavTwo from "../../assets/components/navbars/NavTwo";
 const navbarsData = [
   {
     name: "With Drawer",
-    component: <NavTwo />,
+    large:
+      "https://res.cloudinary.com/dw9jeahgd/image/upload/v1650863724/pras-kit/components/navbars/with-drawer/large.png",
+    small:
+      "https://res.cloudinary.com/dw9jeahgd/image/upload/v1650863724/pras-kit/components/navbars/with-drawer/small.png",
     jsx: `
     import { useState, useEffect, useRef } from "react";
 

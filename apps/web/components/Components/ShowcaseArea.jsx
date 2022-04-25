@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ShowcaseArea = ({ component, jsx, name }) => {
+const ShowcaseArea = ({ large, small, jsx, name }) => {
   const clipboard = useClipboard({ timeout: 1000 });
   const [clipboardColor, setClipboardColor] = useState("currentColor");
   const [afterCopyText, setAfterCopyText] = useState("");
@@ -32,7 +32,22 @@ const ShowcaseArea = ({ component, jsx, name }) => {
           </button>
         </p>
       </div>
-      <div className="w-full bg-gray-200 rounded-b-xl">{component}</div>
+      <div className="w-full rounded-b-xl">
+        <div className="hidden lg:block">
+          <img
+            src={large}
+            alt={name}
+            className="rounded-2xl object-cover object-center w-full rounded-md bg-gray-500"
+          />
+        </div>
+        <div className="lg:hidden">
+          <img
+            src={small}
+            alt={name}
+            className="rounded-2xl object-cover object-center w-full rounded-md bg-gray-500"
+          />
+        </div>
+      </div>
     </div>
   );
 };
